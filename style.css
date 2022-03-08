@@ -1,0 +1,115 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Outfit', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 54%, 11%);
+    width: 100vw;
+    height: 100vh;
+
+}
+.card-boxShadow{
+    box-shadow: 0 30px 50px 10px hsl(216, 50%, 16%);
+    border-radius: 20px;
+}
+.card{
+    background-color: hsl(216, 50%, 16%);
+    width: 280px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 30px 10px 20px hsl(217, 54%, 11%);
+
+}
+.active > img{
+    width: 100%;
+    border-radius: 10px;
+}
+.overlay{
+    width: 280px;
+    height: 280px;
+    border-radius: 10px;
+    background-color:  hsla(178, 100%, 50%, 0.459);
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    display: none;
+}
+.active{
+    position: relative;
+}
+.active:active .overlay{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.card-title{
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+.card-title:active{
+    color: hsl(178, 100%, 50%);
+}
+.card-paragraph{
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+.price-time{
+    display: flex;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+.price{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    font-weight:bolder;
+    color:  hsl(178, 100%, 50%);
+}
+.price > img{
+    display: flex;
+    padding: 5px;
+}
+.time{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+
+
+}
+.time > img{
+    padding: 5px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.profile > img{
+    width: 35px;
+    border: 1px solid white;
+    border-radius: 50px;
+    
+}
+.profile > p{
+    margin-left: 20px;
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+
+}
+.profile > p > span{
+    color: hsl(0, 0%, 100%); 
+    cursor: pointer;
+    font-weight: 300;
+
+}
+.profile > p > span:active{
+    color: hsl(178, 100%, 50%);
+}
